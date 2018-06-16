@@ -32,6 +32,7 @@ const getStyleRule = (test, modules = false, preprocessors = []) => {
       loader: 'postcss-loader',
       options: {
         sourceMap: true,
+        processCssUrls: false,
         config: { path: postcssConfigPath }
       }
     },
